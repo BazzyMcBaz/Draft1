@@ -104,7 +104,7 @@ app.post('/subscribe', (req, res) => {
 });
 
 
-cron.schedule('24 23 * * *', async () => {
+cron.schedule('35 23 * * *', async () => {
   const tasks = await Task.find({});
 
   const tomorrow = new Date();
