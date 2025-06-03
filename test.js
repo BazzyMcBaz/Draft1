@@ -7,9 +7,7 @@ const cron = require('node-cron');
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-  origin: 'https://frontend-jo3q.onrender.com'
-}));
+app.use(cors());
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI)
